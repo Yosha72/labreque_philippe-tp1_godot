@@ -52,7 +52,8 @@ sprite_frames = SubResource("SpriteFrames_272bh")
 [node name="coin" type="AnimatedSprite2D" parent="."]
 position = Vector2(628, 255)
 sprite_frames = SubResource("SpriteFrames_7mycd")
-frame_progress = 0.415418
+frame = 3
+frame_progress = 0.460857
 script = ExtResource("6_5vw27")
 
 [node name="Button" type="Button" parent="coin"]
@@ -67,5 +68,4 @@ stream = ExtResource("7_kek77")
 [node name="Wrong" type="AudioStreamPlayer" parent="coin"]
 stream = ExtResource("8_4c57u")
 
-[connection signal="ready" from="coin" to="coin" method="_on_ready"]
 [connection signal="pressed" from="coin/Button" to="coin" method="_on_button_pressed"]
