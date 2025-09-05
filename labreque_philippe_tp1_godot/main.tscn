@@ -44,28 +44,67 @@ animations = [{
 }]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(-8.26105, -16.9756)
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2(66.261, 30.9756)
+scale = Vector2(0.866003, 1)
+color = Color(1, 0.0901961, 0.266667, 1)
+polygon = PackedVector2Array(-119.739, 712.976, 628.171, 721.406, 1364.26, 729.976, 1366.87, 47, 1376.08, -66.0244, -119.739, -51.0244)
+
+[node name="Polygon2D3" type="Polygon2D" parent="."]
+position = Vector2(117.261, 45.9756)
+scale = Vector2(0.866003, 1)
+color = Color(1, 0.756863, 0.027451, 1)
+polygon = PackedVector2Array(-119.739, 712.976, 628.171, 721.406, 1364.26, 729.976, 1366.87, 47, 1376.08, -66.0244, 485.872, 273.024)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(-15.739, 25.9756)
+scale = Vector2(0.930593, 1)
+color = Color(0, 1, 0.676, 1)
+polygon = PackedVector2Array(-119.739, 712.976, 628.171, 721.406, 1364.26, 729.976, 1366.87, 47, 1376.08, -66.0244, 803.789, 505)
 
 [node name="atm" type="AnimatedSprite2D" parent="."]
-position = Vector2(544, 223)
+position = Vector2(551.261, 333.976)
 sprite_frames = SubResource("SpriteFrames_272bh")
 
 [node name="coin" type="AnimatedSprite2D" parent="."]
-position = Vector2(628, 255)
+position = Vector2(635.261, 365.976)
 sprite_frames = SubResource("SpriteFrames_7mycd")
 frame_progress = 0.415418
 script = ExtResource("6_5vw27")
-
-[node name="Button" type="Button" parent="coin"]
-offset_left = -99.0
-offset_top = -101.0
-offset_right = 101.0
-offset_bottom = 99.0
 
 [node name="Bling" type="AudioStreamPlayer" parent="coin"]
 stream = ExtResource("7_kek77")
 
 [node name="Wrong" type="AudioStreamPlayer" parent="coin"]
 stream = ExtResource("8_4c57u")
+
+[node name="Button" type="Button" parent="coin"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -99.0
+offset_top = -101.0
+offset_right = 101.0
+offset_bottom = 99.0
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+clip_contents = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 97.261
+offset_top = 267.976
+offset_right = 137.261
+offset_bottom = 301.976
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5, 5)
+text = "###"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="ready" from="coin" to="coin" method="_on_ready"]
 [connection signal="pressed" from="coin/Button" to="coin" method="_on_button_pressed"]
