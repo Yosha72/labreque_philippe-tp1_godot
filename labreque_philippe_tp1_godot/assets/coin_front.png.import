@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d380cyjyakksw"
-path="res://.godot/imported/atm_empty.png-4a56b6513893631a10f7c39f1e7cd519.ctex"
+uid="uid://bq2xxpu1x2lru"
+path="res://.godot/imported/coin_front.png-33a6039f134594665db47eb0ba2ec6b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://atm_empty.png"
-dest_files=["res://.godot/imported/atm_empty.png-4a56b6513893631a10f7c39f1e7cd519.ctex"]
+source_file="res://assets/coin_front.png"
+dest_files=["res://.godot/imported/coin_front.png-33a6039f134594665db47eb0ba2ec6b5.ctex"]
 
 [params]
 
